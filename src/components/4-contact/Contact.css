@@ -1,0 +1,141 @@
+section.contact-us.flex {
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+section.contact-us .icon-envelove {
+  color: var(--subtitle);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+section.contact-us .title {
+  font-size: 2.1rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+
+section.contact-us .sub-title {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
+}
+
+/* Form */
+section.contact-us label {
+  color: var(--subtitle);
+  padding: 10px;
+}
+section.contact-us #email,
+section.contact-us #message {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  width: 20rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+.light section.contact-us #email,
+.light section.contact-us #message {
+  color: var(--subtitle);
+  margin-bottom: 20px;
+}
+
+section.contact-us #email:hover,
+section.contact-us #message:hover,
+section.contact-us #email:focus,
+section.contact-us #message:focus {
+  border: 1px solid rgb(45 212 191);
+}
+
+section.contact-us #message {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+section.contact-us .submit {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.7rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63, 63, 70);
+}
+
+section.contact-us .submit:hover {
+  scale: 0.97;
+}
+
+section.contact-us .flex {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .contact-us .contact-us-right {
+    display: none;
+  }
+
+  section.contact-us form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.contact-us form div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+  section.contact-us #email,
+  section.contact-us #message {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+  }
+  section.contact-us .submit {
+    width: 30%;
+    /* margin:15px auto; */
+    align-self: center;
+  }
+}
+.contact-us .contact-us-right {
+  flex-shrink: 2;
+  margin-top: 3rem;
+}
+
+.contact-us .contact-us-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.contact-us .contact-us-right img:hover {
+  scale: 1.1;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .contact-us .contact-us-right {
+    display: none;
+  }
+}
+
+.all-icons {
+  font-size: 1.2rem;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.all-icons .icon a {
+  color: var(--subtitle);
+  font-size: 1.5rem;
+}
