@@ -1,140 +1,150 @@
 main.flex {
-    gap:3rem;
-    align-items: start;
+  gap: 3rem;
+  align-items: start;
 }
 .card {
-    border: 1px solid rgba(93 , 188 , 252 , 0.3 );
-    transition: 0.5s;
-    border-radius: 5px;
-    background-image: linear-gradient(rgba(255, 254, 254, 0.1) ,rgba(255, 254, 254, 0.1));
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  transition: 0.5s;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(255, 254, 254, 0.1),
+    rgba(255, 254, 254, 0.1)
+  );
 }
 
 .card:hover {
-    border: 1px solid var(--blue);
-    rotate: 1deg;
-    scale: 1.1;
-    cursor: pointer;
-
+  border: 1px solid var(--blue);
+  /* rotate: 1deg; */
+  scale: 1.1;
+  cursor: pointer;
 }
 
-
 .card img {
- border-radius: 5px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
-main.flex {
-   flex-direction: column;
- justify-content: center;
-   align-items: center;
-       gap:5rem;
+  main.flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
 }
-}
-
-
-
-
-
 
 /* ====================================
 1-left section =>buttons
 =======================================*/
-main section.left-section {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px
+main h2 {
+  text-align: center;
+  font-size: 30px;
+
+    margin-bottom: 80px;
+
+}
+main .left-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+    margin-bottom: 80px;
 }
 
-main section.left-section button {
-    background-color: rgba(36 , 37 ,46 ,1);
-    width: 11rem;
-    padding: 0.7rem 0;
-    text-align: center;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: capitalize;
-    opacity: .5;
-    border-radius: 5px;
-    transition: .3s;
+main section.left-section div {
+  background-color: rgba(36, 37, 46, 1);
+  width: 9rem;
+  height: 9rem;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: 0.3s;
+  margin-bottom: 70px;
 }
 
-main section.left-section button:hover {
-    opacity: 1;
+main section.left-section div:hover {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  /* padding: 0.8rem 0; */
+  border: 1px solid var(--blue);
 }
 
 main section.left-section button.active {
-  opacity: 1;
-    font-weight: bold;
- letter-spacing: .6px;
- padding: .8rem 0;
- border: 1px solid var(--blue);
-
 }
-
-
 
 /* ====================================
 1-right section
 =====================================*/
- main section.right-section.flex {
-    flex-wrap: wrap; 
-    gap: 25px;
+main section.right-section.flex {
+  flex-wrap: wrap;
+  gap: 25px;
   row-gap: 3rem;
   justify-content: center;
   flex-grow: 1;
-} 
-
-.card .box {
-    padding: 1rem 0.4rem;
-  
+  margin-top: 50px;
 }
 
+.card .box {
+  padding: 1rem 0.4rem;
+  width: 510px;
+}
+.card img {
+  height: 250px;
+}
 .card .box .title {
-    color: var(--title);
-    text-transform: capitalize;
+  color: var(--title);
+  text-transform: capitalize;
 }
 .card .box .sub-title {
   color: var(--subtitle);
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-top: 0.7rem;
   margin-bottom: 1.1rem;
 }
 
 .card .box .icons {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-.card .icon-link , .card .icon-github {
-    font-size: 1.3rem;
-    color: var(--subtitle);
-
+.card .icon-link,
+.card .icon-github {
+  font-size: 1.3rem;
+  color: var(--subtitle);
 }
 
-.card .icon-link:hover , .card .icon-github:hover {
-font-size: 1.4rem;
-color: var(--icon-hover);
-cursor: pointer;
+.card .icon-link:hover,
+.card .icon-github:hover {
+  font-size: 1.4rem;
+  color: var(--icon-hover);
+  cursor: pointer;
 }
 
 .card a.link {
-    font-size: .9rem;
-    color: var(--blue);
-    margin-right: 12px;
-
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin-right: 12px;
 }
 
-
 @media only screen and (max-width: 600px) {
- main section.right-section.flex {
-justify-content: center;
- }
+  main section.right-section.flex {
+    justify-content: center;
+    margin: auto;
+  }
+
+  main section.left-section div {
+    margin: auto;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
- main section.right-section.flex {
+  main section.right-section.flex {
     flex-direction: row;
-
-}
+  }
 }

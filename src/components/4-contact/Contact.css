@@ -109,10 +109,11 @@ section.contact-us .flex {
 .contact-us .contact-us-right {
   flex-shrink: 2;
   margin-top: 3rem;
+  padding-left: 50px;
 }
 
 .contact-us .contact-us-right img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 20px;
   transition: 0.5s;

@@ -1,103 +1,87 @@
 import React, { useState } from "react";
-import { BsLink45Deg } from "react-icons/bs";
-import { AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
-import image1 from "./images/image1.jpeg";
+
 import "./Main.css";
 import { myProjects } from "./Myprojects";
-
-
+import Card from "./Card";
 
 const Main = (buttonCategory) => {
   const [currentActive, setCurrentActive] = useState("all");
   const [arr, setArr] = useState(myProjects);
 
-   const handleClick = (buttonCategory) => {
+  const handleClick = (buttonCategory) => {
     setCurrentActive(buttonCategory);
-
 
     const newArry = myProjects.filter((item) => {
       const zzz = item.category.find((myItem) => {
-        return myItem === buttonCategory
-      })
+        return myItem === buttonCategory;
+      });
       return zzz === buttonCategory;
-    })
-    setArr(newArry)
-   }
+    });
+    setArr(newArry);
+  };
 
   return (
-    <main className="flex">
+    <main>
       {/* =================================================== */}
-      <section className=" flex left-section">
-        <button
-          onClick={() => {
-            handleClick("react");
-          }}
-          className={currentActive === "all" ? "active" : null}
-        >
-          all projects
-        </button>
+      <h2>MainSkills</h2>
+      <section className="flex left-section">
+        <div>Html</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React Js</div>
+        <div>ReduxToolkit</div>
+        <div>Bootstrap</div>
+        <div>Tailwand Css</div>
+        <div>MUI</div>
 
-        <button
-          onClick={() => {
-            handleClick("css");
-          }}
-          className={currentActive == ["css"] ? "active" : null}
-        >
-          Html & CSS
-        </button>
-
-        <button
-          onClick={() => {
-            handleClick("css");
-          }}
-          className={currentActive == "bootstarb" ? "active" : null}
-        >
-          Bootstrab & Tailwand 
-        </button>
-
-        <button className={currentActive === "js" ? "active" : null}>
-         JavaScript
-        </button>
-        <button className={currentActive === "js" ? "active" : null}>
-          React & MUI
-        </button>
+        <div>Scss</div>
+        <div>Responsiveness</div>
+        <div>Adaptive Design</div>
       </section>
 
+      {/* { imgUrl, title, subTitle, githubLink, liveDemo } */}
       {/* ================================================= */}
       <section className="flex right-section">
-        {arr.map((item) => {
-          return (
-            <article key={item.imgPath} className="card">
-              <img src={image1} width={"266px"} alt="" />
-              <div style={{ width: "266px" }} className="box">
-                <h1 className="hello" alt="">
-                  {item.projectsTitle}
-                </h1>
-                <p className="sub-title">
-                  sub-title = desc Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Aut iusto quos alias esse commodi ea.
-                  Inventore.
-                </p>
-                <div className="flex icons">
-                  <div style={{ gap: "17px" }}>
-                    <span className="icon-link">
-                      <BsLink45Deg />
-                    </span>
-                    <span className="icon-github">
-                      <AiFillGithub />
-                    </span>
-                  </div>
-                  <a className="link flex" href="" style={{ alignSelf: "end" }}>
-                    more
-                    <span>
-                      <AiOutlineArrowRight />
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          );
-        })}
+        <Card
+          imgUrl="../../../public/blog-4.jpg"
+          title="Ecommerce Website"
+          subTitle="Utilizing React , CSS  , Bootstrap , Tailwind , Material-UI (MUI)  ,Axios , Axios , •Redux Toolkit , SCSS and Swiper and deploy the project on Vercel.  "
+          githubLink="https://github.com/hishamrehab/EcommerceWebsiteWithReduxToolkit"
+          liveDemo="https://ecommerce-react--reduxtoolkit.web.app/"
+        />
+
+        <Card
+          imgUrl="../../../public/gallery-3 (1).jpg"
+          title="Tours Website"
+          subTitle="Utilizing Seamlessly integrated React Router, Material-UI (MUI) ,MUI Icons and Axios to optimize navigation and streamline API data retrieval for an exceptional user experience.deploy the project on Vercel.  "
+          githubLink="https://github.com/hishamrehab/Tours-Website-React-js"
+          liveDemo="https://tours-website-react-js.vercel.app/"
+        />
+
+        <Card
+          imgUrl="../../../public/logo.png"
+          title="YouTube Clone"
+          subTitle="Utilizing Seamlessly integrated React Router, Material-UI (MUI) ,MUI Icons and Axios to optimize navigation and streamline API data retrieval for an exceptional user experience.deploy the project on Vercel.  "
+          githubLink="https://github.com/hishamrehab/YouTube"
+          liveDemo="https://you-tube-nzf7.vercel.app/"
+        />
+
+        <Card
+          imgUrl="../../../public/work-2.jpg"
+          title="Cars Store"
+          subTitle=" Utilizing HTML, CSS, JavaScript, Bootstrap, Font Awesome, AOS, and Tailwind CSS , Jquery , FirebaseSeam (MUIdata retrievalce) and deploy the project on Vercel."
+          githubLink="https://github.com/hishamrehab/carsStore"
+          liveDemo="https://cars-store-omega.vercel.app/"
+        />
+
+        <Card
+          imgUrl="../../../public/hero-banner (1).png"
+          title="Education Website"
+          subTitle=" Utilizing HTML, CSS, JavaScript, Bootstrap, Font Awesome, AOS, and Tailwind CSS , Jquery , FirebaseSeam (MUIdata retrievalce) and deploy the project on Vercel."
+          githubLink="https://github.com/hishamrehab/Education-Website"
+          liveDemo="https://education-website-black.vercel.app/"
+        />
       </section>
     </main>
   );
