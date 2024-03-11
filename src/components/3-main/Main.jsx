@@ -1,24 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./Main.css";
-import { myProjects } from "./Myprojects";
 import Card from "./Card";
 
-const Main = (buttonCategory) => {
-  const [currentActive, setCurrentActive] = useState("all");
-  const [arr, setArr] = useState(myProjects);
+const Main = () => {
 
-  const handleClick = (buttonCategory) => {
-    setCurrentActive(buttonCategory);
-
-    const newArry = myProjects.filter((item) => {
-      const zzz = item.category.find((myItem) => {
-        return myItem === buttonCategory;
-      });
-      return zzz === buttonCategory;
-    });
-    setArr(newArry);
-  };
 
   return (
     <main>
