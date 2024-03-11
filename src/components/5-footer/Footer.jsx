@@ -5,16 +5,16 @@ const Footer = () => {
     <footer className="flex">
       <ul className="flex">
         <li>
-          <a href="">About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#">Projects</a>
         </li>
         <li>
-          <a href="">Speaking</a>
+          <a href="#">Speaking</a>
         </li>
         <li>
-          <a href="">Users</a>
+          <a href="#">Users</a>
         </li>
       </ul>
 

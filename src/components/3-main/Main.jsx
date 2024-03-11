@@ -1,11 +1,13 @@
 import React from "react";
-
 import "./Main.css";
 import Card from "./Card";
 
+import blog from "../../images/blog-4.jpg";
+import logo from "../../images/logo.png";
+import gallery from "../../images/gallery-3 (1).jpg";
+import work from "../../images/work-2.jpg";
+import heroPanner from "../../images/hero-banner (1).png";
 const Main = () => {
-
-
   return (
     <main>
       {/* =================================================== */}
@@ -30,7 +32,7 @@ const Main = () => {
       {/* ================================================= */}
       <section className="flex right-section">
         <Card
-          imgUrl="../../../public/blog-4.jpg"
+          imgUrl={blog}
           title="Ecommerce Website"
           subTitle="Utilizing React , CSS  , Bootstrap , Tailwind , Material-UI (MUI)  ,Axios , Axios , •Redux Toolkit , SCSS and Swiper and deploy the project on Vercel.  "
           githubLink="https://github.com/hishamrehab/EcommerceWebsiteWithReduxToolkit"
@@ -38,7 +40,7 @@ const Main = () => {
         />
 
         <Card
-          imgUrl="../../../public/gallery-3 (1).jpg"
+          imgUrl={gallery}
           title="Tours Website"
           subTitle="Utilizing Seamlessly integrated React Router, Material-UI (MUI) ,MUI Icons and Axios to optimize navigation and streamline API data retrieval for an exceptional user experience.deploy the project on Vercel.  "
           githubLink="https://github.com/hishamrehab/Tours-Website-React-js"
@@ -46,7 +48,7 @@ const Main = () => {
         />
 
         <Card
-          imgUrl="../../../public/logo.png"
+          imgUrl={logo}
           title="YouTube Clone"
           subTitle="Utilizing Seamlessly integrated React Router, Material-UI (MUI) ,MUI Icons and Axios to optimize navigation and streamline API data retrieval for an exceptional user experience.deploy the project on Vercel.  "
           githubLink="https://github.com/hishamrehab/YouTube"
@@ -54,7 +56,7 @@ const Main = () => {
         />
 
         <Card
-          imgUrl="../../../public/work-2.jpg"
+          imgUrl={work}
           title="Cars Store"
           subTitle=" Utilizing HTML, CSS, JavaScript, Bootstrap, Font Awesome, AOS, and Tailwind CSS , Jquery , FirebaseSeam (MUIdata retrievalce) and deploy the project on Vercel."
           githubLink="https://github.com/hishamrehab/carsStore"
@@ -62,7 +64,7 @@ const Main = () => {
         />
 
         <Card
-          imgUrl="../../../public/hero-banner (1).png"
+          imgUrl={heroPanner}
           title="Education Website"
           subTitle=" Utilizing HTML, CSS, JavaScript, Bootstrap, Font Awesome, AOS, and Tailwind CSS , Jquery , FirebaseSeam (MUIdata retrievalce) and deploy the project on Vercel."
           githubLink="https://github.com/hishamrehab/Education-Website"
