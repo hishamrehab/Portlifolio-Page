@@ -1,0 +1,128 @@
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+
+header ul.flex {
+  gap: 16px;
+}
+
+ header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 2rem;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  box-shadow: 1px 1px 40px #242323;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+
+header button {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ header button.menu {
+  display: none;
+} 
+
+
+header button.mode , header button.menu ,header button.close {
+  background-color:var(--bgHeader); 
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size: 1.3rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: .2s;
+  cursor: pointer;
+  border: 1px solid rgb(180, 134, 129);
+  color: var(--icon-hover);
+}
+.light .icon-sun {
+  color: rgb(255, 255, 54);
+  box-shadow: 1px 1px 40px #dce28c;
+}
+/* Model */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(58, 58, 83, 0.8);
+  z-index: 8;
+  border: 2px solid;
+  backdrop-filter: blur(4px);
+}
+
+
+@keyframes animation {
+  0% {scale: 0;}
+  60% {scale: 1.2;}
+  100% {scale: 1;}
+}
+
+header .fixed ul.model {
+    animation: animation .9s 1 ;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+}
+
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+}
+
+header .fixed ul.model li:first-child  {
+   text-align: right;
+   padding-bottom: 1rem;
+   padding-top: .5rem; 
+} 
+
+
+header .fixed ul.model li a {
+    font-size: 1rem;
+}
+
+
+header .fixed ul.model li:last-child {
+  text-align: left;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+}
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
+}
