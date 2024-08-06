@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero flex">
       <div className="parent-avatar flex">
-        <img className="avatar" src={hishamrehab}  alt="" />
+        <img className="avatar" src={hishamrehab} alt="" />
       </div>
       <div className="left-section">
         <h1 className="title">
@@ -14,13 +14,7 @@ const Hero = () => {
           <br /> Front End Developer.
         </h1>
         <p className="sub-title">
-          A Software Engineer and web developer with Internet experience and
-          passion for work and the ability to solve problems , I create websites
-          that are responsive to all screens. Proficient in HTML, CSS and
-          JavaScript, React Js and Material ui , strapi , react router dom ,
-          redux toolkit , swipper , Scss , Bootstrab and Tailwand Css , Aos
-          aNIMATION , jquire , TypeScript , UI & UX , GitHub , Git , Vercel ,
-          Firebase and AI Tools.
+          A Software Engineer and Front End Developer with a specialization in React.js. I have a strong history of creating dynamic and interactive web applications. My skills in React.js enable me to design smooth user experiences, and my solid knowledge of JavaScript, HTML, and CSS ensures that my code is both robust and easy to maintain. I excel in team settings and consistently deliver high-quality projects on schedule. Additionally, my experience with code reviews and agile methodologies allows me to effectively contribute to any development team.
         </p>
       </div>
     </section>

@@ -37,8 +37,7 @@ main.flex {
 =======================================*/
 main h2 {
   text-align: center;
-  font-size: 30px;
-
+  font-size: 40px;
   margin-bottom: 80px;
 }
 main .left-section {
@@ -54,8 +53,8 @@ main .left-section {
 
 main section.left-section div {
   background-color: rgba(36, 37, 46, 1);
-  width: 9rem;
-  height: 9rem;
+  width: 8.5rem;
+  height: 8.5rem;
   padding-top: 60px;
   text-align: center;
   font-size: 1.1rem;
@@ -93,7 +92,7 @@ main section.right-section.flex {
 .card .box {
   padding: 1rem 0.4rem;
   width: 510px;
-  height: 220px;
+  height: auto;
 }
 .card img {
   height: 250px;
