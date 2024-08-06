@@ -8,7 +8,7 @@ header ul.flex {
   gap: 16px;
 }
 
- header.flex nav {
+header.flex nav {
   background-color: var(--bgHeader);
   padding: 0.77rem 2rem;
   border-radius: 22px;
@@ -26,7 +26,6 @@ header ul li a {
   font-weight: 500;
 }
 
-
 header ul li a:hover {
   color: var(--blue);
   opacity: 1;
@@ -39,20 +38,22 @@ header button {
   align-items: center;
   justify-content: center;
 }
- header button.menu {
+header button.menu {
   display: none;
-} 
+}
 
-
-header button.mode , header button.menu ,header button.close {
-  background-color:var(--bgHeader); 
+header button.mode,
+header button.menu,
+header button.close {
+  background-color: var(--bgHeader);
   height: 2.4rem;
   width: 2.4rem;
+  display: flex;
   font-size: 1.3rem;
   justify-content: center;
   text-align: center;
   border-radius: 50%;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
   border: 1px solid rgb(180, 134, 129);
   color: var(--icon-hover);
@@ -71,51 +72,54 @@ header .fixed {
   backdrop-filter: blur(4px);
 }
 
-
 @keyframes animation {
-  0% {scale: 0;}
-  60% {scale: 1.2;}
-  100% {scale: 1;}
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 header .fixed ul.model {
-    animation: animation .9s 1 ;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    padding: 1rem 2rem;
-    background-color: var(--secondary);
+  animation: animation 0.9s 1;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
 }
 
 header .fixed ul.model li {
   border-bottom: 1px solid var(--border);
   padding-bottom: 1rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
-header .fixed ul.model li:first-child  {
-   text-align: right;
-   padding-bottom: 1rem;
-   padding-top: .5rem; 
-} 
-
+header .fixed ul.model li:first-child {
+  text-align: right;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
 
 header .fixed ul.model li a {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-
 
 header .fixed ul.model li:last-child {
   text-align: left;
-    border: none;
-    padding-bottom: 0;
-    padding-top: 0.2rem;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
 }
 
 @media (max-width: 700px) {
