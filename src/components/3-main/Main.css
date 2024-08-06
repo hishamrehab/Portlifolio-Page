@@ -131,6 +131,12 @@ main section.right-section.flex {
   margin-right: 12px;
 }
 
+.more-link {
+  display: flex;
+}
+.arrow {
+  margin-left: 2px;
+}
 @media only screen and (max-width: 600px) {
   main section.right-section.flex {
     justify-content: center;
