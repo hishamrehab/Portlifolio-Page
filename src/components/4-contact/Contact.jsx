@@ -8,7 +8,7 @@ import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 const Contact = () => {
   return (
     <>
-      <section className="contact-us flex">
+      <section className="contact-us flex" id="contact">
         <div className="contact-us-left">
           <h1 className="title">
             <span className="icon-envelove">

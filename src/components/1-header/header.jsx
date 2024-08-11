@@ -4,23 +4,23 @@ import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import "./header.css";
 const Header = () => {
   const [showModel, setShowModel] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem("currentMode") ?? "dark" );
+  const [theme, setTheme] = useState(localStorage.getItem("currentMode") ?? "dark");
 
- useEffect(() => {
-if(theme === "light") {
-  document.body.classList.remove("dark");
-  document.body.classList.add("light");
-} else {
-    document.body.classList.remove("light");
-    document.body.classList.add("dark");
-}
-},[theme])
-   
-   
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    } else {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    }
+  }, [theme])
+
+
 
   return (
     <header className="flex">
-      <button onClick={() => setShowModel(true)} className="menu flex">
+      <button onClick={() => setShowModel(true)} className="menu flex" >
         <AiOutlineMenu />
       </button>
       <div />
@@ -28,19 +28,17 @@ if(theme === "light") {
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About </a>
+            <a href="#about">About </a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
+
           <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -61,7 +59,7 @@ if(theme === "light") {
         {theme === "dark" ? (
           <BsFillMoonFill />
         ) : (
-          <BsFillSunFill  className="icon-sun"/>
+          <BsFillSunFill className="icon-sun" />
         )}
       </button>
       {showModel && (

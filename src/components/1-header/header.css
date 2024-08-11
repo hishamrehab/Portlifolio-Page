@@ -38,9 +38,6 @@ header button {
   align-items: center;
   justify-content: center;
 }
-header button.menu {
-  display: none;
-}
 
 header button.mode,
 header button.menu,
@@ -58,6 +55,11 @@ header button.close {
   border: 1px solid rgb(180, 134, 129);
   color: var(--icon-hover);
 }
+
+header button.menu {
+  display: none;
+}
+
 .light .icon-sun {
   color: rgb(255, 255, 54);
   box-shadow: 1px 1px 40px #dce28c;

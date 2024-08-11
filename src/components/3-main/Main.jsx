@@ -22,7 +22,7 @@ const Main = () => {
     <main>
       {/* =================================================== */}
       <h2>MainSkills</h2>
-      <section className="flex left-section">
+      <section className="flex left-section" id="skills">
 
         <div>React Js</div>
         <div>React Router Dom</div>
@@ -57,7 +57,7 @@ const Main = () => {
       {/* { imgUrl, title, subTitle, githubLink, liveDemo } */}
       {/* ================================================= */}
 
-      <section className="flex right-section">
+      <section className="flex right-section" id="projects">
         <Card
           imgUrl={Movie}
           title="Ultimate MovieHub"

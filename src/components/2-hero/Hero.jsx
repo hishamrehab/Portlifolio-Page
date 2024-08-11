@@ -4,7 +4,7 @@ import hishamrehab from "../../images/hishamrehab.png";
 
 const Hero = () => {
   return (
-    <section className="hero flex">
+    <section className="hero flex" id="about">
       <div className="parent-avatar flex">
         <img className="avatar" src={hishamrehab} alt="" />
       </div>
