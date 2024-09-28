@@ -93,6 +93,15 @@ const Main = () => {
         />
 
         <Card
+          imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbFS-vhF9KzXLWVgtYgJKqIJNAHFfZo9gRA&s"
+          title="Ecommerce-Website-Next js"
+          subTitle="This e-commerce platform is built using Next.js, React.js, and Tailwind CSS, using Redux Toolkit for state management and Clerk Auth for secure authentication, with a seamless user experience with Lucide Icons."
+          githubLink="https://github.com/hishamrehab/Ecommerce-Website-Next14-js"
+          liveDemo="https://ecommerce-website-next14-js.vercel.app/"
+        />
+
+
+        <Card
           imgUrl={gallery}
           title="Tours Website With Booking System"
           subTitle="Utilized React, React Bootstrap, and Redux with internal data files. The site offers a simple tour booking system, showcases our mission, includes traveler reviews, and highlights custom services. Discover featured tours, popular attractions, special packages, and traveler photos. Meet our expert team and read testimonials."
@@ -195,3 +204,4 @@ const Main = () => {
 };
 
 export default Main;
+
