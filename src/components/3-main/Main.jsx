@@ -102,6 +102,15 @@ const Main = () => {
 
 
         <Card
+          imgUrl=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJt5cM85r3fbtyf3TS99X823mAjVEDM3AjQ&s"
+          title="Admin Dashboard"
+          subTitle="Utilized cutting-edge technologies to design and develop a robust Admin Dashboard. Tech stack included: React JS, React Router Dom, Tailwind CSS, Framer Motion, Recharts, and Lucide Icons. Created a comprehensive and user-friendly dashboard, showcasing expertise in front-end development, UI design, and data visualization."
+
+          githubLink="https://github.com/hishamrehab/Admin-dashboard"
+          liveDemo="https://admin-dashboard-delta-hazel.vercel.app/"
+        />
+
+        <Card
           imgUrl={gallery}
           title="Tours Website With Booking System"
           subTitle="Utilized React, React Bootstrap, and Redux with internal data files. The site offers a simple tour booking system, showcases our mission, includes traveler reviews, and highlights custom services. Discover featured tours, popular attractions, special packages, and traveler photos. Meet our expert team and read testimonials."
