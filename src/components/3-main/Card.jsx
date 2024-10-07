@@ -7,7 +7,10 @@ const Card = ({ imgUrl, title, subTitle, githubLink, liveDemo }) => {
   return (
 
     <article className="card">
-      <img src={imgUrl} width={"266px"} alt="" />
+      <a href={liveDemo}>
+        <img src={imgUrl} width={"266px"} alt="" />
+      </a>
+
       <div style={{ width: "266px" }} className="box">
         <h1 className="hello" alt="">
           {title}
