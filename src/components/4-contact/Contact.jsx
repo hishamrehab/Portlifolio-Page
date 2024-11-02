@@ -24,8 +24,10 @@ const Contact = () => {
           <div className="flex">
             <form className="">
               <div className="form">
-                <label htmlFor="email">Email Address:</label>
-                <input required type="email" name="" id="email" />
+                <label htmlFor="email" >Email Address:</label>
+                <input required type="email" name="" id="email" style={{
+                  marginTop: "10px"
+                }} />
               </div>
 
               <div className="flex" style={{ marginTop: "24px" }}>

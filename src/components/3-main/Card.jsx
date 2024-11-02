@@ -21,14 +21,13 @@ const Card = ({ imgUrl, title, subTitle, githubLink, liveDemo }) => {
             <a className="icon-link" href={liveDemo}>
               <BsLink45Deg />
             </a>
-            <a className="icon-github" href={githubLink}>
+            {/* <a className="icon-github">
               <AiFillGithub />
-            </a>
+            </a> */}
           </div>
           <div className="more-link">
-            <a className="link flex" href="" style={{ alignSelf: "end" }}>
+            <a className="link flex" href={githubLink} style={{ alignSelf: "end" }}>
               more
-
               <AiOutlineArrowRight className="arrow" />
 
             </a>

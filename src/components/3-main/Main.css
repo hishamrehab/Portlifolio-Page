@@ -87,6 +87,7 @@ main section.right-section.flex {
   justify-content: center;
   flex-grow: 1;
   margin-top: 50px;
+  align-items: flex-start;
 }
 
 .card .box {

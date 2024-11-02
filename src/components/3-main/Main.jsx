@@ -200,7 +200,7 @@ const Main = () => {
 
         <Card
           imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjpu1b0gjUs30NN1K2145aS9PtaR_SeiHng&s"
-          title="Education Website Using UseContext and UseReducer Hooks"
+          title="Shopping Cart Using UseContext and UseReducer Hooks"
           subTitle="A shopping cart built with React Hooks for efficient state management. It offers real-time updates, item adjustments, and total calculation, ensuring seamless interaction and responsiveness for e-commerce platforms."
           githubLink="https://github.com/hishamrehab/Shopping-Cart_Reducer-and-Context"
           liveDemo="https://shopping-cart-reducer-and-context.vercel.app/"
